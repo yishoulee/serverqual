@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+<title id="title">ServerQual evidence chain</title>
+<desc id="desc">Technical observation and desk research were followed by field observations and one dedicated consultation, but buyer proof and commercial commitments were not reached.</desc>
+<rect width="1200" height="430" fill="#ffffff"/>
+<text x="55" y="58" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#111827">Evidence reached the problem - not the purchase</text>
+<text x="55" y="92" font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#4b5563">Useful technical and directional evidence was collected, but commercial proof was not reached.</text>
+
+<rect x="55" y="145" width="215" height="120" rx="10" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+<text x="78" y="182" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#065f46">Technical observation</text>
+<text x="78" y="216" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Qualification work exists</text>
+<text x="78" y="240" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">and can be messy.</text>
+
+<line x1="270" y1="205" x2="330" y2="205" stroke="#6b7280" stroke-width="3"/>
+<polygon points="330,205 316,197 316,213" fill="#6b7280"/>
+
+<rect x="340" y="145" width="215" height="120" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+<text x="363" y="182" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#1e40af">Desk + field research</text>
+<text x="363" y="216" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Mapped alternatives and</text>
+<text x="363" y="240" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">narrowed some categories.</text>
+
+<line x1="555" y1="205" x2="615" y2="205" stroke="#6b7280" stroke-width="3"/>
+<polygon points="615,205 601,197 601,213" fill="#6b7280"/>
+
+<rect x="625" y="145" width="215" height="120" rx="10" fill="#fffbeb" stroke="#b45309" stroke-width="2"/>
+<text x="648" y="182" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#92400e">One consultation</text>
+<text x="648" y="216" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">Exposed procurement and</text>
+<text x="648" y="240" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">local-supplier friction.</text>
+
+<line x1="840" y1="205" x2="900" y2="205" stroke="#991b1b" stroke-width="3" stroke-dasharray="9 7"/>
+<polygon points="900,205 886,197 886,213" fill="#991b1b"/>
+
+<rect x="910" y="125" width="235" height="160" rx="10" fill="#fef2f2" stroke="#991b1b" stroke-width="2"/>
+<text x="935" y="164" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="#991b1b">Commercial proof missing</text>
+<text x="935" y="198" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">No verified budget owner</text>
+<text x="935" y="222" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">No paid pilot / PO / invoice</text>
+<text x="935" y="246" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">No repeat purchase</text>
+<text x="935" y="270" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#374151">No accepted decision artifact</text>
+
+<text x="55" y="345" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#111827">Conclusion:</text>
+<text x="175" y="345" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#111827">real technical activity did not become evidence of a stand-alone business.</text>
+<text x="55" y="385" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#4b5563">The correct close-out is a no-go, not a claim of successful market validation.</text>
+</svg>
