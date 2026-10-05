@@ -1,128 +1,131 @@
-# Validation Summary
+# Close-out Summary
 
-## Project question
+## Correct interpretation
 
-ServerQual investigated whether server and platform qualification could support an independent commercial service or product.
+ServerQual was **not** a successful market-validation project.
 
-The problem space looked credible because enterprise platforms are configuration-specific and changes can span:
+A more accurate description is:
 
-- BIOS/BMC/firmware
-- operating systems
-- kernel and device drivers
+> **Useful failed exploration; weak hypothesis design; limited external discovery; no commercial validation; correct decision to stop before significant capital spend.**
+
+The underlying technical activity is credible. The commercial hypothesis set was not.
+
+## What the project started from
+
+The starting observation was that server and platform qualification can be configuration-specific and operationally messy. Changes may span:
+
+- BIOS / BMC / firmware
+- operating systems and kernels
+- device drivers
 - storage and network adapters
 - virtualization layers
 - accelerators
 - component substitutions
 - support and certification boundaries
 
-The commercial question was whether an independent entrant could create enough value between existing vendor programs, internal validation teams, and established labs.
+That establishes a problem domain. It does **not** establish a stand-alone purchase.
 
-## Problem structure
+The unsupported jump was essentially:
 
-A real qualification workflow often requires more than checking a compatibility matrix.
+**"This work is technically messy" -> "buyers will pay an independent new provider for a separate qualification artifact or service."**
 
-A team may need to:
+That second statement was never proven.
 
-1. identify the exact hardware and firmware state
-2. determine what changed
-3. check official support claims
-4. reproduce the relevant environment
-5. run regression or targeted validation
-6. collect logs and evidence
-7. isolate defects
-8. coordinate with vendors
-9. retest fixes
-10. decide whether the change is safe enough to deploy
+## Hypothesis quality
 
-This creates genuine operational work.
+The project accumulated 20 hypotheses. A later audit rated the set:
 
-## Hypotheses explored
+- **Poor:** 8
+- **Weak:** 6
+- **Moderate:** 6
+- **Strong:** 0
 
-### 1. Independent qualification evidence
+The main design problems were:
 
-Produce reproducible evidence for a specific customer configuration or change.
+- no fixed first beachhead
+- user, approver, sponsor, and economic buyer were often conflated
+- several hypotheses started from artifacts or technical specialties rather than blocked customer decisions
+- many ideas repeated the same unproven trust/purchase assumption
+- falsification thresholds were usually not defined in advance
+- pricing and financial modeling preceded purchase evidence
+- several ideas required hardware access, security trust, specialist depth, relationships, or capital beyond the realistic resource boundary
 
-### 2. Certification-readiness support
+See [Hypothesis Quality Audit](hypothesis-quality-audit.md).
 
-Help vendors complete internal testing and evidence preparation before entering an official certification process.
+## Evidence actually collected
 
-### 3. Component-substitution qualification
+The project included:
 
-Validate changes such as NIC, storage, firmware, or other BOM substitutions where support risk can change.
+- prior practical exposure to Linux/server enablement and validation work
+- desk research and workflow mapping
+- competitor/substitute analysis
+- field observations at Taiwan industry events
+- one dedicated external practitioner consultation
+- limited informal field conversations
+- proposed service and evidence-artifact designs
+- illustrative financial stress tests
 
-### 4. Server change readiness
+A historical project record states that more than 70 official technical pages were screened. This repository does not independently re-audit that count.
 
-Analyze a proposed firmware, OS, hypervisor, driver, or hardware change and produce blockers, prerequisites, test scope, rollback considerations, and a deployment recommendation.
-
-## Evidence collected
-
-The project combined:
-
-- review of more than 70 official technical pages
-- vendor and ecosystem research
-- qualification workflow mapping
-- practitioner interviews
-- customer/problem discovery
-- Taiwan industry-event observations
-- competitor and substitute analysis
-- experience from Linux/server enablement and validation work
-
-## Main findings
-
-### The technical problem is real
-
-Qualification remains configuration-specific and can become fragmented across multiple organizations and support boundaries.
-
-### The market is structurally occupied
-
-Large server OEMs, silicon vendors, OS vendors, internal validation organizations, and established third-party labs already perform much of the valuable work.
-
-### Independent credibility is expensive
-
-A new entrant would need some combination of:
-
-- hardware access
-- test infrastructure
-- repeatable methodology
-- vendor relationships
-- domain credibility
-- customer trust
-- acceptance of third-party evidence
-
-These are not impossible barriers, but they are substantial.
-
-### Commercial validation remained incomplete
+## Evidence that was missing
 
 The project did **not** establish:
 
-- a paying customer
+- a verified economic buyer
+- a complete buying chain in a real account
 - a paid qualification pilot
-- a design partner
+- a customer invoice or purchase order
 - repeat demand
-- a sufficiently differentiated wedge
-- clear willingness to pay for the proposed independent service
+- a design partner
+- a customer-approved delivery advantage
+- customer acceptance of an independent qualification dossier
+- a sufficiently differentiated entry point
 
-## Final decision
+Therefore the project should not be described as commercially validated.
 
-The correct decision was to stop.
+## What the external consultation actually showed
 
-The evidence supported the existence of a technical and operational problem, but not a sufficiently attractive independent business opportunity.
+The strongest observed external case was closer to:
 
-**Decision: Do not proceed with ServerQual V1.**
+**"What exactly are we buying, and how do we make it work?"**
 
-Stopping the project prevented additional investment in a lab, software platform, fundraising, or product development before commercial evidence existed.
+The described pain involved procurement constraints, unclear hardware revisions/documentation, Linux support, component replacement, local supplier trust, warranty, and recourse.
+
+That is real friction.
+
+It was **not** evidence that a buyer wanted a stand-alone independent qualification dossier.
+
+## Structural competition
+
+Important substitutes already existed:
+
+- OEM/platform-vendor qualification and support
+- OS and silicon-vendor programs
+- internal validation/release teams
+- system integrators
+- specialist labs
+- existing procurement/change-control processes
+
+The residual independent wedge needed to be demonstrated rather than assumed.
+
+## Decision
+
+**Do not proceed with ServerQual V1.**
+
+The decision is bounded. It does not claim that qualification work has no market.
+
+It means the investigated entry point was not sufficiently evidenced, differentiated, purchasable, or realistically deliverable for continued investment.
 
 ## What remains useful
 
-The project produced reusable knowledge about:
+The useful artifacts are:
 
-- server qualification workflows
-- supportability research
-- evidence design
-- vendor boundaries
-- market structure
-- problem discovery
-- business-model testing
-- stop criteria
+- the corrected hypothesis model
+- the 20-item hypothesis-quality audit
+- workflow and substitute mapping
+- evidence-boundary discipline
+- interview material
+- operating-model concepts
+- a documented no-go decision
 
-The project is therefore retained as a completed validation case study rather than an active startup.
+The project is retained as a **close-out case study in correcting weak assumptions**, not as evidence of product-market fit or customer traction.
