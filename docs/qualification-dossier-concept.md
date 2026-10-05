@@ -1,8 +1,16 @@
 # Qualification Dossier Concept
 
+> **Status: concept only — never requested, purchased, or accepted by a customer.**
+
 One artifact explored during ServerQual was a structured qualification dossier.
 
-The goal was to make qualification results reproducible and decision-oriented rather than leaving them as disconnected logs, spreadsheets, screenshots, or email threads.
+The concept was technically reasonable: instead of leaving results as disconnected logs, spreadsheets, screenshots, or email threads, a dossier could package scope, configuration, tests, evidence, defects, and a decision in one place.
+
+However, the later hypothesis-quality audit exposed a more important problem:
+
+**the project designed the artifact before proving that a customer had a blocked decision that required this artifact and a separate budget to buy it.**
+
+That makes the dossier useful as a technical design exercise, but weak evidence of a business.
 
 ## Proposed structure
 
@@ -35,7 +43,7 @@ The goal was to make qualification results reproducible and decision-oriented ra
 
 ### 4. Evidence
 
-Each result should include:
+Each result could include:
 
 - timestamp
 - configuration state
@@ -64,19 +72,33 @@ For each failure:
 
 ### 6. Decision
 
-The dossier would end with one of four decisions:
+A proposed dossier could end with:
 
 - **GO**
 - **CONDITIONAL GO**
 - **NO-GO**
 - **FURTHER VENDOR CLARIFICATION REQUIRED**
 
-The decision should include residual risk and any operational conditions.
+The decision would include residual risk and any operational conditions.
 
-## Important boundary
+## Why this did not become a product
+
+The commercial questions were never answered:
+
+- Who is the exact buyer?
+- What live event creates the need?
+- Which approver accepts an independent conclusion?
+- Does this replace work or merely repackage work already being done?
+- Is there a separate budget for the dossier?
+- Will the customer provide the required system access and data?
+- What evidence would make the customer pay again?
+
+Without answers to those questions, the dossier is a **solution concept**, not evidence of customer demand.
+
+## Boundary
 
 This concept was never intended to replace official vendor certification.
 
-It was designed as a possible independent decision-support artifact for a specific configuration or change.
+It was also never delivered as paid customer work.
 
-The commercial model for this artifact was not validated, so it remains a project concept rather than a live service.
+The candid conclusion is that the evidence-pack / dossier idea was **too solution-led** in the original investigation. It should only be revisited if a real buyer first demonstrates a blocked decision and agrees that this artifact would change that decision.
