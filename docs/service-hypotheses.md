@@ -1,26 +1,51 @@
-# Service Hypotheses Explored
+# Service Framing History
 
-ServerQual went through several possible service definitions during discovery.
+This file records how the ServerQual service idea changed during the investigation.
 
-The changes were deliberate: each version attempted to narrow the problem and find a commercially useful entry point.
+It should **not** be read as a sequence of validated product iterations. The project did not have enough external evidence to support that interpretation.
 
-## Hypothesis A — Qualification as a Service
+The more accurate reading is that the project kept reframing the same broad technical domain while the core purchase assumption remained unresolved.
 
-A broad external service for validating server hardware, firmware, drivers, operating systems, and virtualization combinations.
+## Core purchase assumption
 
-### Problem
+Most versions depended on some form of this claim:
 
-The scope was too broad and competed too directly with OEMs, internal validation teams, vendor certification programs, and established labs.
+> A customer will trust an independent new provider to produce qualification evidence or analysis, will allow that output to affect a real procurement / release / support / change decision, and will pay separately for it.
 
-**Result:** weak / too crowded.
+That assumption was never established.
+
+## Framing A — Broad "Qualification as a Service"
+
+A broad external service for validating combinations of:
+
+- server hardware
+- firmware
+- drivers
+- operating systems
+- virtualization
+- components
+
+### Why it was weak
+
+The scope was too broad.
+
+It also competed directly or indirectly with:
+
+- OEM qualification teams
+- internal validation organizations
+- OS/vendor certification programs
+- system integrators
+- established laboratories
+
+**Candid result:** poor starting frame. It began with a technical category rather than one buyer and one purchase event.
 
 ---
 
-## Hypothesis B — Independent qualification evidence
+## Framing B — Independent qualification evidence
 
-Produce a reproducible evidence package for one exact platform configuration or change.
+A narrower idea was to produce a reproducible evidence package for one exact platform configuration or change.
 
-Potential use cases included:
+Possible cases included:
 
 - firmware upgrades
 - OS upgrades
@@ -29,65 +54,125 @@ Potential use cases included:
 - virtualization changes
 - accelerator integration
 
-### Intended value
+### Why it looked better
 
-Reduce ambiguity by turning scattered test results into an auditable decision package.
+The artifact was more bounded and easier to describe.
 
-### Problem
+### Why it was still weak
 
-The deliverable was technically coherent, but willingness to pay for independent evidence was not established.
+The project moved from:
 
-**Result:** technically credible, commercially unproven.
+**"a bounded evidence pack can be produced"**
 
----
+to:
 
-## Hypothesis C — Certification readiness
+**"a customer will buy and accept that pack"**
 
-Support vendors before official certification by executing internal test plans, collecting evidence, and closing defects.
+without proving the second statement.
 
-### Intended value
+The idea therefore remained a **solution hypothesis**, not a validated customer problem.
 
-Reduce internal engineering workload without claiming certification authority.
-
-### Problem
-
-This required strong vendor relationships, hardware access, domain credibility, and clear evidence that teams would outsource this work.
-
-**Result:** plausible niche, not validated.
+**Candid result:** technically coherent, purchase assumption unproven.
 
 ---
 
-## Hypothesis D — Server change readiness
+## Framing C — Certification readiness
 
-Shift from "qualification evidence" to a narrower operational question:
+Another idea was to support vendors before official certification by helping execute test plans, collect evidence, and close defects.
 
-**Know whether a server change is safe before the maintenance window.**
+### Why it looked plausible
 
-A proposed workflow:
+There can be deadlines, workload spikes, and evidence requirements before certification.
+
+### Why it remained weak
+
+The hypothesis required several assumptions to be true simultaneously:
+
+- the vendor outsources sensitive pre-certification work
+- an external newcomer receives system access
+- the external work is trusted
+- the work is not already handled by internal teams, partners, or established labs
+- a budget exists for this separate engagement
+
+These assumptions were not validated.
+
+**Candid result:** plausible niche on paper, weakly evidenced.
+
+---
+
+## Framing D — Server change readiness
+
+The later framing moved closer to an operational decision:
+
+> **Know whether a server change is safe before the maintenance window.**
+
+A proposed workflow included:
 
 1. capture the current environment
 2. define the proposed change
 3. research supportability and compatibility
 4. identify affected systems
 5. identify blockers and prerequisites
-6. define test or canary scope
+6. define test/canary scope
 7. define rollback considerations
-8. produce a deployment recommendation
+8. produce a recommendation
 
-### Intended value
+### Why this was an improvement
 
-Move closer to an operational decision rather than selling evidence as the product.
+It moved from selling "evidence" toward a concrete decision event.
 
-### Problem
+### Why it still did not justify continuation
 
-Although this improved the value proposition, there was still insufficient commercial evidence for a differentiated independent service.
+The project still lacked:
 
-**Result:** strongest framing explored, still not enough to continue.
+- a fixed buyer
+- a verified budget owner
+- customer acceptance of the deliverable
+- proof that the work would be purchased separately
+- a differentiated channel position
+- a paid pilot
+
+**Candid result:** a better framing, but still not a validated business.
 
 ---
 
-## Final outcome
+## The 20-hypothesis problem
 
-None of the hypotheses reached the evidence threshold required for further investment.
+The broader project register eventually contained 20 ideas spanning:
 
-The project therefore ended at validation rather than progressing into product development, fundraising, or dedicated lab build-out.
+- exact-stack changes
+- certification readiness
+- component substitution
+- evidence packaging
+- incident reproduction
+- monitoring
+- emergency firmware/security work
+- virtualization/HCI upgrades
+- air-gapped environments
+- legacy support
+- procurement acceptance
+- workload performance
+- AI systems
+- Redfish/BMC regression
+- cross-OEM testing
+- OS-release readiness
+- remote/edge systems
+- shared laboratory infrastructure
+- BIOS/power/thermal/NUMA tuning
+- compatibility intelligence
+
+These were not one coherent market.
+
+Some were customer jobs, some were artifacts, some were specialist engineering businesses, some were software/data products, and one was a capital model.
+
+See [Hypothesis Quality Audit](hypothesis-quality-audit.md) for the individual ratings.
+
+## Final interpretation
+
+The project did not fail because it selected one excellent hypothesis and discovered the market rejected it.
+
+It failed earlier than that:
+
+**the hypothesis portfolio itself was too broad, mixed, and under-specified to support efficient validation.**
+
+The eventual no-go was still the correct decision.
